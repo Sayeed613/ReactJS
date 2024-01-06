@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script src="https://www.unpkg.com/react@18.2.0/umd/react.development.js"></script>
+    <script src="https://www.unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+        let container = document.getElementById("root");
+
+        let element = (
+          <div style={{width:"600px", backgroundColor: "#ffe4c4", height:"140px",display: "flex", justifyContent: "SpaceBetween",gap :"20px", color: "#000",alignItems:"center"}}> parent
+            <p style={{ height:"100px",width:"100px", backgroundColor:"red",color:"#FFF"}}>1</p>
+            <p style={{ height:"100px",width:"100px", backgroundColor:"blue",color:"#FFF"}}>2</p>
+            <p style={{height:"100px",width:"100px",backgroundColor:"green",color:"#FFF"}} >3</p>
+            <p style={{height:"100px",width:"100px",backgroundColor:"purple",color:"#FFF"}} >4</p>
+          </div>
+        );
+
+        ReactDOM.render(element, container);
+      </script>
+  </body>
+</html>
